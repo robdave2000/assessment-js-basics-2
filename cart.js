@@ -35,6 +35,7 @@ const cart = [
 
 //CODE HERE
 
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -54,7 +55,13 @@ const cart = [
 */
 
 //CODE HERE
+function calcFinalPrice (cartTotal, couponValue, tax)
+{
+    cartTotal = cartTotal + (cartTotal * tax);
+    cartTotal = cartTotal - couponValue;
 
+    return cartTotal
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -80,6 +87,16 @@ const cart = [
 /*
     TEXT ANSWER HERE
 
+    customers name
+        String because the customer name is a word
+    customers address
+        String because even though there are numbers in the address
+        there are also words
+    customers phone number
+        Int because a phone number is nothing but whole numbers
+    customers payment style
+        String because it would be the name of payment, like debit
+        credit or cash
 */
 
 /*
@@ -88,3 +105,10 @@ const cart = [
 */
 
 //CODE HERE
+let customer = 
+{
+    name: "Robert",
+    address: "1234 road st",
+    phone: 1234567890,
+    payment: "Cash"
+}

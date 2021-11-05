@@ -31,7 +31,15 @@
 */
 
 //CODE HERE
-
+let pizza =
+{
+    name: "Meatzza",
+    price: 14.99,
+    category: "Entree",
+    popularity: 3,
+    rating: 4.5,
+    tags: ["Meat", "Cheese"]
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +51,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +61,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -63,7 +71,8 @@
 */
 
 //CODE HERE
-
+let price = pizza.price;
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -73,7 +82,8 @@
 */
 
 //CODE HERE
-
+let property = pizza.property;
+console.log(property);
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,8 +98,49 @@
 */
 
 //CODE HERE
-
-
+let foodArr = [
+    {
+        name: "Extrav",
+        price: 8.99,
+        category: "App",
+        popularity: 1,
+        rating: 5,
+        tags: ["Vegan"]
+    },
+    {
+        name: "Cheese",
+        price: 12.99,
+        category: "Entree",
+        popularity: 4,
+        rating: 3,
+        tags: ["Cheese"]
+    },
+    {
+        name: "Sausage",
+        price: 13.99,
+        category: "Entree",
+        popularity: 8,
+        rating: 4,
+        tags: ["Meat", "Cheese"]
+    },
+    {
+        name: "Salad",
+        price: 9.99,
+        category: "App",
+        popularity: 3,
+        rating: 4.5,
+        tags: ["Vegan"]
+    },
+    {
+        name: "Soup",
+        price: 8.99,
+        category: "App",
+        popularity: 2,
+        rating: 5,
+        tags: ["Vegan", "Wet"]
+    },
+]
+console.log(foodArr);
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -104,9 +155,18 @@
 */
 
 //CODE HERE
+function filter(tag)
+{
+    for (let i = 0; i < foodArr.length; i++)
+    {
+        if (foodArr[i].tags === tag)
+        {
+            return console.log(foodArr[i]);
+        }
+    }
+}
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter("Meat");
 
 
 //////////////////PROBLEM 5////////////////////
@@ -149,7 +209,9 @@
 */
 
 //CODE HERE
-
+function filterByProperty(property, number, type)
+{
+}
 
 /*
     Invoke the `filterByProperty` function passing
